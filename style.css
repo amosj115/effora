@@ -431,13 +431,14 @@ a {
 }
 
 .wig-name-display {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 800;
     color: white;
     text-align: center;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-    line-height: 1.4;
-    padding: 15px 12px;
+    line-height: 1.35;
+    padding: 12px 10px;
+    white-space: normal;
     word-break: break-word;
 }
 
@@ -1355,34 +1356,34 @@ a {
     }
 
     .products-grid {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        gap: 18px;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 16px;
     }
 
     .product-image {
-        height: 160px;
+        height: 150px;
     }
 
     .wig-name-display {
-        font-size: 18px;
-        padding: 15px 10px;
+        font-size: 17px;
+        padding: 14px 10px;
     }
 
     .product-info {
-        padding: 16px;
+        padding: 14px;
     }
 
     .product-info h3 {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .product-buttons {
-        gap: 8px;
+        gap: 7px;
     }
 
     .btn-add-cart,
     .btn-whatsapp {
-        padding: 7px 12px;
+        padding: 7px 10px;
         font-size: 11px;
     }
 }
@@ -1421,55 +1422,55 @@ a {
     }
 
     .products-grid {
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 10px;
     }
 
     .product-image {
-        height: 120px;
+        height: 110px;
     }
 
     .wig-name-display {
-        font-size: 16px;
-        padding: 10px 8px;
+        font-size: 15px;
+        padding: 9px 7px;
     }
 
     .product-info {
-        padding: 12px;
+        padding: 10px;
     }
 
     .product-info h3 {
-        font-size: 14px;
-        margin-bottom: 8px;
+        font-size: 13px;
+        margin-bottom: 7px;
     }
 
     .rating {
-        margin-bottom: 8px;
-        font-size: 12px;
+        margin-bottom: 7px;
+        font-size: 11px;
     }
 
     .product-info .description {
-        font-size: 12px;
-        margin-bottom: 10px;
+        font-size: 11px;
+        margin-bottom: 9px;
     }
 
     .product-footer {
-        margin-top: 10px;
-        padding-top: 10px;
+        margin-top: 8px;
+        padding-top: 8px;
     }
 
     .price {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .product-buttons {
-        gap: 6px;
+        gap: 5px;
     }
 
     .btn-add-cart,
     .btn-whatsapp {
-        padding: 6px 10px;
-        font-size: 11px;
+        padding: 5px 9px;
+        font-size: 10px;
     }
 
     .floating-cart {
@@ -1525,55 +1526,55 @@ a {
     }
 
     .products-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+        gap: 8px;
     }
 
     .product-image {
-        height: 100px;
+        height: 90px;
     }
 
     .wig-name-display {
-        font-size: 14px;
-        padding: 8px 6px;
+        font-size: 13px;
+        padding: 7px 5px;
     }
 
     .product-info {
-        padding: 10px;
+        padding: 8px;
     }
 
     .product-info h3 {
-        font-size: 13px;
-        margin-bottom: 6px;
+        font-size: 12px;
+        margin-bottom: 5px;
     }
 
     .rating {
-        margin-bottom: 6px;
-        font-size: 11px;
+        margin-bottom: 5px;
+        font-size: 10px;
     }
 
     .product-info .description {
-        font-size: 11px;
-        margin-bottom: 8px;
+        font-size: 10px;
+        margin-bottom: 6px;
     }
 
     .product-footer {
-        margin-top: 8px;
-        padding-top: 8px;
+        margin-top: 6px;
+        padding-top: 6px;
     }
 
     .price {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .product-buttons {
-        gap: 4px;
+        gap: 3px;
     }
 
     .btn-add-cart,
     .btn-whatsapp {
-        padding: 5px 8px;
-        font-size: 10px;
+        padding: 4px 6px;
+        font-size: 9px;
     }
 
     .floating-cart {
@@ -1582,9 +1583,9 @@ a {
     }
 
     .floating-cart-icon {
-        width: 56px;
-        height: 56px;
-        font-size: 20px;
+        width: 52px;
+        height: 52px;
+        font-size: 18px;
     }
 
     .floating-cart-count {
