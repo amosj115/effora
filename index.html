@@ -1,1 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effora - Premium Wigs & Hair Extensions</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@600;700&family=Playfair+Display:wght@700;800&family=Lora:wght@500;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation & Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <i class="fas fa-sparkles"></i>
+                    <span>EFFORA</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#products">Shop</a></li>
+                    <li><a href="#ratings">Reviews</a></li>
+                    <li><a href="#social">Follow Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                    <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                </div>
+            </div>
+        </nav>
 
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to EFFORA</h1>
+                <p class="hero-subtitle">Discover Premium Quality Wigs & Hair Extensions</p>
+                <p class="hero-description">
+                    At EFFORA, we believe every woman deserves to feel confident and beautiful. 
+                    Our carefully curated collection of wigs features the finest quality materials, 
+                    natural styles, and unbeatable prices. Transform your look in seconds with our 
+                    premium wigs designed for every occasion.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">Shop Now</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('ratings').scrollIntoView({behavior: 'smooth'})">See Reviews</button>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Category Filter -->
+    <section class="category-filter">
+        <div class="container">
+            <h2>Browse by Category</h2>
+            <div class="categories">
+                <button class="category-btn active" data-filter="all">All Products</button>
+                <button class="category-btn" data-filter="long">Long Wigs</button>
+                <button class="category-btn" data-filter="short">Short Wigs</button>
+                <button class="category-btn" data-filter="curly">Curly Wigs</button>
+                <button class="category-btn" data-filter="straight">Straight Wigs</button>
+                <button class="category-btn" data-filter="extensions">Extensions</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Premium Collection</h2>
+            <div class="products-grid">
+                
+                <!-- Product 1 -->
+                <div class="product-card" data-category="long">
+                    <div class="product-image">
+                        <span class="wig-name-display">Silky Black Wave</span>
+                        <span class="badge">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Silky Black Wave Wig</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(0 reviews)</span>
+                        </div>
+                        <p class="description">Long silky black wave wig with natural texture. Perfect for everyday wear.</p>
+                        <div class="product-footer">
+                            <span class="price">R1100</span>
+                            <div class="product-buttons">
+                                <button class="btn btn-add-cart" data-product="Silky Black Wave Wig" data-price="1100">
+                                    <i class="fas fa-cart-plus"></i> Add to Cart
+                                </button>
+                                <a href="https://wa.me/+27697629616?text=Hi%20Effora,%20I%20interested%20in%20the%20Silky%20Black%20Wave%20Wig" class="btn btn-whatsapp" target="_blank">
+                                    <i class="fab fa-whatsapp"></i> Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="curly">
+                    <div class="product-image">
+                        <span class="wig-name-display">Curly Brown Honey</span>
+                        <span class="badge-sale">Sale</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Curly Brown Honey Wig</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(0 reviews)</span>
+                        </div>
+                        <p class="description">Beautiful curly wig with honey blonde highlights. Bold and glamorous.</p>
+                        <div class="product-footer">
+                            <div class="price-section">
+                                <span class="price">R1000</span>
+                                <span class="original-price">R1350</span>
+                            </div>
+                            <div class="product-buttons">
+                                <button class="btn btn-add-cart" data-product="Curly Brown Honey Wig" data-price="1000">
+                                    <i class="fas fa-cart-plus"></i> Add to Cart
+                                </button>
+                                <a href="https://wa.me/+27697629616?text=Hi%20Effora,%20I%20interested%20in%20the%20Curly%20Brown%20Honey%20Wig" class="btn btn-whatsapp" target="_blank">
+                                    <i class="fab fa-whatsapp"></i> Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="straight">
+                    <div class="product-image">
+                        <span class="wig-name-display">Sleek Straight Auburn</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sleek Straight Auburn Wig</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(0 reviews)</span>
+                        </div>
+                        <p class="description">Elegant straight auburn wig with professional finish. Ideal for formal events.</p>
+                        <div class="product-footer">
+                            <span class="price">R1000</span>
+                            <div class="product-buttons">
+                                <button class="btn btn-add-cart" data-product="Sleek Straight Auburn Wig" data-price="1000">
+                                    <i class="fas fa-cart-plus"></i> Add to Cart
+                                </button>
+                                <a href="https://wa.me/+27697629616?text=Hi%20Effora,%20I%20interested%20in%20the%20Sleek%20Straight%20Auburn%20Wig" class="btn btn-whatsapp" target="_blank">
+                                    <i class="fab fa-whatsapp"></i> Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="short">
+                    <div class="product-image">
+                        <span class="wig-name-display">Chic Pixie Cut Blonde</span>
+                        <span class="badge">Hot</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Chic Pixie Cut Blonde Wig</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(0 reviews)</span>
+                        </div>
+                        <p class="description">Short pixie cut in blonde. Modern, chic, and easy to style for any occasion.</p>
+                        <div class="product-footer">
+                            <span class="price">R1200</span>
+                            <div class="product-buttons">
+                                <button class="btn btn-add-cart" data-product="Chic Pixie Cut Blonde Wig" data-price="1200">
+                                    <i class="fas fa-cart-plus"></i> Add to Cart
+                                </button>
+                                <a href="https://wa.me/+27697629616?text=Hi%20Effora,%20I%20interested%20in%20the%20Chic%20Pixie%20Cut%20Blonde%20Wig" class="btn btn-whatsapp" target="_blank">
+                                    <i class="fab fa-whatsapp"></i> Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="long">
+                    <div class="product-image">
+                        <span class="wig-name-display">Ombre Black to Purple</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ombre Black to Purple Wig</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(0 reviews)</span>
+                        </div>
+                        <p class="description">Trendy ombre wig with black to purple gradient. Stand out with style!</p>
+                        <div class="product-footer">
+                            <span class="price">R1300</span>
+                            <div class="product-buttons">
+                                <button class="btn btn-add-cart" data-product="Ombre Black to Purple Wig" data-price="1300">
+                                    <i class="fas fa-cart-plus"></i> Add to Cart
+                                </button>
+                                <a href="https://wa.me/+27697629616?text=Hi%20Effora,%20I%20interested%20in%20the%20Ombre%20Black%20to%20Purple%20Wig" class="btn btn-whatsapp" target="_blank">
+                                    <i class="fab fa-whatsapp"></i> Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="extensions">
+                    <div class="product-image">
+                        <span class="wig-name-display">Premium Human Hair<br/>Extensions</span>
+                        <span class="badge">Premium</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Human Hair Extensions</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(0 reviews)</span>
+                        </div>
+                        <p class="description">100% human hair extensions. Virgin hair with natural feel and longevity.</p>
+                        <div class="product-footer">
+                            <span class="price">R1500</span>
+                            <div class="product-buttons">
+                                <button class="btn btn-add-cart" data-product="Premium Human Hair Extensions" data-price="1500">
+                                    <i class="fas fa-cart-plus"></i> Add to Cart
+                                </button>
+                                <a href="https://wa.me/+27697629616?text=Hi%20Effora,%20I%20interested%20in%20the%20Premium%20Human%20Hair%20Extensions" class="btn btn-whatsapp" target="_blank">
+                                    <i class="fab fa-whatsapp"></i> Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card" data-category="curly">
+                    <div class="product-image">
+                        <span class="wig-name-display">Kinky Curly Burgundy</span>
+                        <span class="badge">Hot</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Kinky Curly Burgundy Wig</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(0 reviews)</span>
+                        </div>
+                        <p class="description">Bold and vibrant kinky curly wig in rich burgundy color. Perfect for making a statement.</p>
+                        <div class="product-footer">
+                            <span class="price">R1540</span>
+                            <div class="product-buttons">
+                                <button class="btn btn-add-cart" data-product="Kinky Curly Burgundy Wig" data-price="1540">
+                                    <i class="fas fa-cart-plus"></i> Add to Cart
+                                </button>
+                                <a href="https://wa.me/+27697629616?text=Hi%20Effora,%20I%20interested%20in%20the%20Kinky%20Curly%20Burgundy%20Wig" class="btn btn-whatsapp" target="_blank">
+                                    <i class="fab fa-whatsapp"></i> Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card" data-category="straight">
+                    <div class="product-image">
+                        <span class="wig-name-display">Silky Jet Black Long</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Silky Jet Black Long Wig</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(0 reviews)</span>
+                        </div>
+                        <p class="description">Ultra-long silky straight wig in jet black. Timeless elegance for any occasion.</p>
+                        <div class="product-footer">
+                            <span class="price">R1800</span>
+                            <div class="product-buttons">
+                                <button class="btn btn-add-cart" data-product="Silky Jet Black Long Wig" data-price="1800">
+                                    <i class="fas fa-cart-plus"></i> Add to Cart
+                                </button>
+                                <a href="https://wa.me/+27697629616?text=Hi%20Effora,%20I%20interested%20in%20the%20Silky%20Jet%20Black%20Long%20Wig" class="btn btn-whatsapp" target="_blank">
+                                    <i class="fab fa-whatsapp"></i> Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Ratings & Reviews Section -->
+    <section id="ratings" class="ratings">
+        <div class="container">
+            <h2>Customer Love ❤️</h2>
+            <div class="ratings-content">
+                <div class="ratings-summary">
+                    <div class="overall-rating">
+                        <span class="big-rating">4.8</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>Based on 5 reviews</p>
+                    </div>
+                    <div class="rating-breakdown">
+                        <div class="rating-bar">
+                            <span>5 <i class="fas fa-star"></i></span>
+                            <div class="progress"><div style="width: 75%"></div></div>
+                            <span>3</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>4 <i class="fas fa-star"></i></span>
+                            <div class="progress"><div style="width: 15%"></div></div>
+                            <span>2</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>3 <i class="fas fa-star"></i></span>
+                            <div class="progress"><div style="width: 7%"></div></div>
+                            <span>0</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>2 <i class="fas fa-star"></i></span>
+                            <div class="progress"><div style="width: 2%"></div></div>
+                            <span>0</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>1 <i class="fas fa-star"></i></span>
+                            <div class="progress"><div style="width: 1%"></div></div>
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonials">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="customer-info">
+                                <h4>Karabo M</h4>
+                                <span class="verified">✓ Verified Purchase</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"The quality of wigs from Effora is exceptional! I've ordered 3 times and each wig looks natural and lasts long. The customer service is also amazing!"</p>
+                        <span class="review-date">2 weeks ago</span>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="customer-info">
+                                <h4>Tsitsi N</h4>
+                                <span class="verified">✓ Verified Purchase</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Worth every Rand! The Curly Brown Honey wig is so beautiful. Everyone compliments my hair now. Delivery was fast too!"</p>
+                        <span class="review-date">1 month ago</span>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="customer-info">
+                                <h4>Buhle D</h4>
+                                <span class="verified">✓ Verified Purchase</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"I'm a wig connoisseur and Effora has the best collection! The price point is unbeatable for the quality offered. Highly recommended!"</p>
+                        <span class="review-date">3 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social" class="social-section">
+        <div class="container">
+            <h2>Follow Our Journey</h2>
+            <p>Join our vibrant community on social media for style tips, new arrivals, and exclusive offers!</p>
+            
+            <div class="social-feeds">
+                <!-- Instagram Feed -->
+                <div class="social-feed instagram">
+                    <div class="feed-header">
+                        <i class="fab fa-instagram"></i>
+                        <h3>Instagram</h3>
+                        <p>@EfforaWigs</p>
+                    </div>
+                    <div class="feed-content">
+                        <img src="https://via.placeholder.com/200x200?text=Instagram+Post+1" alt="Instagram Post">
+                        <a href="https://instagram.com/efforawigs" class="follow-btn" target="_blank">Follow Now</a>
+                    </div>
+                </div>
+
+                <!-- TikTok Feed -->
+                <div class="social-feed tiktok">
+                    <div class="feed-header">
+                        <i class="fab fa-tiktok"></i>
+                        <h3>TikTok</h3>
+                        <p>@EfforaWigs</p>
+                    </div>
+                    <div class="feed-content">
+                        <img src="https://via.placeholder.com/200x200?text=TikTok+Video+1" alt="TikTok Video">
+                        <a href="https://tiktok.com/@efforawigs" class="follow-btn" target="_blank">Follow Now</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hashtag-promo">
+                <h3>Share Your Effora Moment!</h3>
+                <p>Tag us with <strong>#EfforaTransformation</strong> and get featured on our page!</p>
+                <div class="hashtag-text">#EfforaTransformation #EfforaWigs #WigGame</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Effora Section -->
+    <section class="why-choose">
+        <div class="container">
+            <h2>Why Choose Effora?</h2>
+            <p class="section-subtitle">Experience the difference with our premium wig collection</p>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Quality Guarantee</h3>
+                    <p>100% premium quality wigs with satisfaction guarantee. Love it or return it!</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Premium Materials</h3>
+                    <p>Only the finest human hair and synthetic fibers. Natural look and feel guaranteed.</p>
+                </div>
+
+            </div>
+
+            <div class="trust-badges">
+                <div class="badge-item">
+                    <i class="fas fa-award"></i>
+                    <span>Certified Quality</span>
+                </div>
+                <div class="badge-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Verified Reviews</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+27697629616">+27 69 762 9616</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:support@effora.com">support@effora.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/+27697629616" target="_blank">Chat with us</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" onsubmit="handleContactForm(event)">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <div class="cart-modal-header">
+                <h2>Your Cart</h2>
+                <span class="cart-close">&times;</span>
+            </div>
+            <div class="cart-items">
+                <!-- Cart items will be populated here -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total: R<span id="cart-total">0</span></span>
+                </div>
+                <button id="purchase-btn" class="btn btn-primary">
+                    <i class="fab fa-whatsapp"></i> Purchase via WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Effora</h4>
+                    <p>We're dedicated to providing premium quality wigs and hair extensions at affordable prices.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#products">Shop</a></li>
+                        <li><a href="#ratings">Reviews</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                       
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/efforawigs" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com/@efforawigs" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/+27697629616" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Effora - Premium Wigs & Hair Extensions. All rights reserved.</p>
+                <p>Designed By Impact Design Studios <i class="fas fa-heart"></i> for beautiful transformations</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Cart functionality
+        let cart = JSON.parse(localStorage.getItem('efforaCart')) || [];
+        let cartCount = cart.length;
+
+        // Update cart count display
+        function updateCartCount() {
+            document.querySelector('.cart-count').textContent = cartCount;
+        }
+
+        // Add item to cart
+        function addToCart(productName, price) {
+            const existingItem = cart.find(item => item.name === productName);
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({
+                    name: productName,
+                    price: parseInt(price),
+                    quantity: 1
+                });
+                cartCount++;
+            }
+            localStorage.setItem('efforaCart', JSON.stringify(cart));
+            updateCartCount();
+            showNotification(`${productName} added to cart!`);
+        }
+
+        // Remove item from cart
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            cartCount = cart.length;
+            localStorage.setItem('efforaCart', JSON.stringify(cart));
+            updateCartCount();
+            updateCartModal();
+        }
+
+        // Update cart modal
+        function updateCartModal() {
+            const cartItems = document.querySelector('.cart-items');
+            const cartTotal = document.getElementById('cart-total');
+            
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<div class="cart-empty">Your cart is empty</div>';
+                cartTotal.textContent = '0';
+                return;
+            }
+
+            let total = 0;
+            cartItems.innerHTML = cart.map((item, index) => {
+                total += item.price * item.quantity;
+                return `
+                    <div class="cart-item">
+                        <div class="cart-item-info">
+                            <h4>${item.name}</h4>
+                            <span>R${item.price} x ${item.quantity}</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span class="cart-item-price">R${item.price * item.quantity}</span>
+                            <button class="cart-item-remove" onclick="removeFromCart(${index})">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            
+            cartTotal.textContent = total;
+        }
+
+        // Show cart modal
+        function showCartModal() {
+            updateCartModal();
+            document.getElementById('cart-modal').style.display = 'block';
+        }
+
+        // Hide cart modal
+        function hideCartModal() {
+            document.getElementById('cart-modal').style.display = 'none';
+        }
+
+        // Purchase via WhatsApp
+        function purchaseViaWhatsApp() {
+            if (cart.length === 0) {
+                alert('Your cart is empty!');
+                return;
+            }
+
+            let message = 'Hi Effora, I would like to purchase the following items:\n\n';
+            let total = 0;
+            
+            cart.forEach(item => {
+                message += `${item.name} - R${item.price} x ${item.quantity}\n`;
+                total += item.price * item.quantity;
+            });
+            
+            message += `\nTotal: R${total}\n\nPlease confirm my order.`;
+            
+            const whatsappUrl = `https://wa.me/+27697629616?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+            
+            // Clear cart after purchase
+            cart = [];
+            cartCount = 0;
+            localStorage.removeItem('efforaCart');
+            updateCartCount();
+            hideCartModal();
+        }
+
+        // Show notification
+        function showNotification(message) {
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.className = 'notification';
+            notification.textContent = message;
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: var(--success-color);
+                color: white;
+                padding: 12px 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                z-index: 1001;
+                font-weight: 600;
+                animation: slideIn 0.3s ease;
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                notification.style.animation = 'slideOut 0.3s ease';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 3000);
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCartCount();
+            
+            // Add to cart buttons
+            document.querySelectorAll('.btn-add-cart').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const productName = this.getAttribute('data-product');
+                    const price = this.getAttribute('data-price');
+                    addToCart(productName, price);
+                });
+            });
+            
+            // Cart icon click
+            document.querySelector('.cart-icon').addEventListener('click', function(e) {
+                e.preventDefault();
+                showCartModal();
+            });
+            
+            // Cart modal close
+            document.querySelector('.cart-close').addEventListener('click', hideCartModal);
+            
+            // Close modal when clicking outside
+            window.addEventListener('click', function(e) {
+                const modal = document.getElementById('cart-modal');
+                if (e.target === modal) {
+                    hideCartModal();
+                }
+            });
+            
+            // Purchase button
+            document.getElementById('purchase-btn').addEventListener('click', purchaseViaWhatsApp);
+        });
+
+        // Contact form
+        function handleContactForm(event) {
+            event.preventDefault();
+            alert('Thank you for your feedback! We\'ll get back to you soon.');
+            event.target.reset();
+        }
+
+        // Filter products
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                
+                // Update active button
+                document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                // Filter products
+                document.querySelectorAll('.product-card').forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
