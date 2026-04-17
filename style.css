@@ -1435,23 +1435,22 @@ a {
     }
 
     .product-info h3 {
-        font-size: 14px;
-        margin-bottom: 8px;
+        font-size: 13px;
+        margin-bottom: 7px;
     }
 
     .rating {
-        margin-bottom: 8px;
-        font-size: 12px;
+        margin-bottom: 7px;
+        font-size: 11px;
     }
 
     .product-info .description {
-        font-size: 11px;
-        margin-bottom: 10px;
+        display: none;
     }
 
     .product-footer {
-        margin-top: 9px;
-        padding-top: 9px;
+        margin-top: 7px;
+        padding-top: 7px;
     }
 
     .price {
@@ -1539,23 +1538,22 @@ a {
     }
 
     .product-info h3 {
-        font-size: 14px;
-        margin-bottom: 8px;
+        font-size: 12px;
+        margin-bottom: 6px;
     }
 
     .rating {
-        margin-bottom: 8px;
-        font-size: 12px;
+        margin-bottom: 6px;
+        font-size: 11px;
     }
 
     .product-info .description {
-        font-size: 12px;
-        margin-bottom: 8px;
+        display: none;
     }
 
     .product-footer {
-        margin-top: 8px;
-        padding-top: 8px;
+        margin-top: 6px;
+        padding-top: 6px;
     }
 
     .price {
