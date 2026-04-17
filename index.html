@@ -322,6 +322,14 @@
         </div>
     </section>
 
+    <!-- Floating Cart Icon -->
+    <div id="floating-cart" class="floating-cart">
+        <a href="#" class="floating-cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="floating-cart-count">0</span>
+        </a>
+    </div>
+
     <!-- Ratings & Reviews Section -->
     <section id="ratings" class="ratings">
         <div class="container">
@@ -624,6 +632,15 @@
         // Update cart count display
         function updateCartCount() {
             document.querySelector('.cart-count').textContent = cartCount;
+            document.querySelector('.floating-cart-count').textContent = cartCount;
+            
+            // Show/hide floating cart based on cart contents
+            const floatingCart = document.getElementById('floating-cart');
+            if (cartCount > 0) {
+                floatingCart.style.display = 'block';
+            } else {
+                floatingCart.style.display = 'none';
+            }
         }
 
         // Add item to cart
@@ -735,7 +752,7 @@
                 position: fixed;
                 top: 20px;
                 right: 20px;
-                background: var(--success-color);
+                background: var(--gold-color);
                 color: white;
                 padding: 12px 20px;
                 border-radius: 8px;
@@ -771,6 +788,12 @@
             
             // Cart icon click
             document.querySelector('.cart-icon').addEventListener('click', function(e) {
+                e.preventDefault();
+                showCartModal();
+            });
+            
+            // Floating cart icon click
+            document.querySelector('.floating-cart-icon').addEventListener('click', function(e) {
                 e.preventDefault();
                 showCartModal();
             });
