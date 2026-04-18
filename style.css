@@ -396,6 +396,7 @@ a {
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
+    aspect-ratio: 1;
     animation: slideIn 0.5s ease;
 }
 
@@ -418,7 +419,7 @@ a {
 .product-image {
     position: relative;
     overflow: hidden;
-    height: 180px;
+    height: 160px;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     display: flex;
     align-items: center;
@@ -466,7 +467,7 @@ a {
 
 
 .product-info {
-    padding: 20px;
+    padding: 15px;
 }
 
 .product-info h3 {
@@ -1356,7 +1357,7 @@ a {
     }
 
     .product-image {
-        height: 150px;
+        height: 120px;
     }
 
     .wig-name-display {
@@ -1422,7 +1423,7 @@ a {
     }
 
     .product-image {
-        height: 125px;
+        height: 110px;
     }
 
     .wig-name-display {
