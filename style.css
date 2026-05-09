@@ -1,16 +1,16 @@
 /* ===== ROOT & GLOBAL STYLES ===== */
 :root {
-    --primary-color: #C4A287;
-    --secondary-color: #D4AF37;
-    --accent-color: #E8DCC8;
-    --dark-bg: #2a2a2a;
-    --light-bg: #F5F1E8;
-    --text-dark: #2a2a2a;
+    --primary-color: #FF66B2;
+    --secondary-color: #FFB6C1;
+    --accent-color: #FFF0F5;
+    --dark-bg: #2D1E24;
+    --light-bg: #FFFAFA;
+    --text-dark: #4A333C;
     --text-light: #ffffff;
-    --border-color: #D9CCBA;
-    --success-color: #10b981;
-    --warning-color: #f59e0b;
-    --gold-color: #D4AF37;
+    --border-color: #FDD9E3;
+    --success-color: #10B981;
+    --warning-color: #F59E0B;
+    --gold-color: #FFD700;
 }
 
 * {
@@ -41,7 +41,7 @@ body::before {
     font-size: 120px;
     font-weight: 800;
     letter-spacing: 8px;
-    color: rgba(212, 175, 55, 0.08);
+    color: rgba(255, 182, 193, 0.08);
     font-family: 'Georgia', 'Garamond', serif;
     text-transform: uppercase;
     z-index: -1;
@@ -87,12 +87,12 @@ a {
 .btn-primary {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
-    box-shadow: 0 4px 15px rgba(217, 70, 239, 0.3);
+    box-shadow: 0 4px 15px rgba(255, 102, 178, 0.3);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(196, 162, 135, 0.4);
+    box-shadow: 0 6px 20px rgba(255, 102, 178, 0.4);
 }
 
 .btn-secondary {
@@ -152,13 +152,13 @@ a {
     align-items: center;
     gap: 10px;
     letter-spacing: 2px;
-    text-shadow: 0 2px 8px rgba(212, 175, 55, 0.3), 0 0 15px rgba(212, 175, 55, 0.15);
+    text-shadow: 0 2px 8px rgba(255, 182, 193, 0.3), 0 0 15px rgba(255, 182, 193, 0.15);
     transition: all 0.3s ease;
 }
 
 .logo:hover {
     transform: scale(1.05);
-    text-shadow: 0 4px 12px rgba(212, 175, 55, 0.5), 0 0 20px rgba(212, 175, 55, 0.25);
+    text-shadow: 0 4px 12px rgba(255, 182, 193, 0.5), 0 0 20px rgba(255, 182, 193, 0.25);
 }
 
 .logo i {
@@ -228,7 +228,7 @@ a {
 
 /* ===== HERO SECTION ===== */
 .hero {
-    background: linear-gradient(135deg, rgba(42, 42, 42, 0.7), rgba(212, 175, 55, 0.3)),
+    background: linear-gradient(135deg, rgba(42, 42, 42, 0.7), rgba(255, 182, 193, 0.3)),
                 url('https://images.unsplash.com/photo-1460328522222-edf96e8e9c16?w=1200&h=600&fit=crop') center/cover;
     background-attachment: fixed;
     min-height: 600px;
@@ -248,7 +248,7 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(196, 162, 135, 0.4), rgba(212, 175, 55, 0.3));
+    background: linear-gradient(135deg, rgba(255, 102, 178, 0.4), rgba(255, 182, 193, 0.3));
     pointer-events: none;
 }
 
@@ -262,8 +262,8 @@ a {
 .hero-content h1 {
     font-size: 40px;
     margin-bottom: 15px;
-    color: #F5F1E8;
-    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 2px 2px 0 rgba(212, 175, 55, 0.3);
+    color: var(--text-light);
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 2px 2px 0 rgba(255, 182, 193, 0.3);
     font-family: 'Playfair Display', serif;
     font-weight: 800;
     letter-spacing: 1px;
@@ -275,11 +275,11 @@ a {
 .hero-subtitle {
     font-size: 36px;
     margin-bottom: 30px;
-    color: #D4AF37;
+    color: var(--secondary-color);
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     letter-spacing: 1px;
-    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(212, 175, 55, 0.4);
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 182, 193, 0.4);
     font-style: normal;
     line-height: 1.4;
     transition: all 0.4s ease;
@@ -289,7 +289,7 @@ a {
     font-size: 21px;
     margin-bottom: 40px;
     line-height: 1.6;
-    color: #F5F1E8;
+    color: var(--text-light);
     font-family: 'Lora', serif;
     font-weight: 500;
     letter-spacing: 0.3px;
@@ -403,7 +403,7 @@ a {
 
 .product-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 25px rgba(217, 70, 239, 0.15);
+    box-shadow: 0 8px 25px rgba(255, 102, 178, 0.15);
 }
 
 @keyframes slideIn {
@@ -576,11 +576,11 @@ a {
     height: 72px;
     min-width: 72px;
     min-height: 72px;
-    background: linear-gradient(135deg, #E8B4B8 0%, #D4AF37 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     border-radius: 50%;
     color: white !important;
     font-size: 28px;
-    box-shadow: 0 6px 18px rgba(232, 180, 184, 0.35);
+    box-shadow: 0 6px 18px rgba(255, 102, 178, 0.35);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     text-decoration: none;
@@ -588,7 +588,7 @@ a {
 
 .floating-cart-icon:hover {
     transform: scale(1.08);
-    box-shadow: 0 8px 22px rgba(232, 180, 184, 0.45);
+    box-shadow: 0 8px 22px rgba(255, 102, 178, 0.45);
 }
 
 .floating-cart-icon i {
@@ -784,7 +784,7 @@ a {
     flex-direction: column;
     align-items: center;
     padding: 40px;
-    background: linear-gradient(135deg, rgba(196, 162, 135, 0.05), rgba(212, 175, 55, 0.05));
+    background: linear-gradient(135deg, rgba(255, 102, 178, 0.05), rgba(255, 182, 193, 0.05));
     border-radius: 12px;
     border: 2px solid linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 }
@@ -861,7 +861,7 @@ a {
 }
 
 .testimonial-card:hover {
-    box-shadow: 0 4px 15px rgba(196, 162, 135, 0.1);
+    box-shadow: 0 4px 15px rgba(255, 102, 178, 0.1);
     transform: translateX(5px);
 }
 
@@ -909,7 +909,7 @@ a {
 /* ===== SOCIAL SECTION ===== */
 .social-section {
     padding: 60px 0;
-    background: linear-gradient(135deg, var(--dark-bg) 0%, rgba(196, 162, 135, 0.1) 100%);
+    background: linear-gradient(135deg, var(--dark-bg) 0%, rgba(255, 102, 178, 0.1) 100%);
 }
 
 .social-section h2 {
@@ -917,7 +917,7 @@ a {
     font-size: 36px;
     color: white;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, #D4AF37, var(--accent-color));
+    background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -947,7 +947,7 @@ a {
 
 .social-feed:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(196, 162, 135, 0.2);
+    box-shadow: 0 8px 25px rgba(255, 102, 178, 0.2);
 }
 
 .feed-header {
@@ -1009,7 +1009,7 @@ a {
 
 .follow-btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(217, 70, 239, 0.3);
+    box-shadow: 0 4px 15px rgba(255, 102, 178, 0.3);
 }
 
 .hashtag-promo {
@@ -1017,7 +1017,7 @@ a {
     background: rgba(255, 255, 255, 0.05);
     padding: 40px;
     border-radius: 12px;
-    border: 2px solid rgba(196, 162, 135, 0.2);
+    border: 2px solid rgba(255, 102, 178, 0.2);
 }
 
 .hashtag-promo h3 {
@@ -1033,7 +1033,7 @@ a {
 
 .hashtag-text {
     font-size: 14px;
-    background: rgba(217, 70, 239, 0.2);
+    background: rgba(255, 102, 178, 0.2);
     color: var(--accent-color);
     padding: 12px;
     border-radius: 8px;
@@ -1082,7 +1082,7 @@ a {
 
 .benefit-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(217, 70, 239, 0.15);
+    box-shadow: 0 8px 25px rgba(255, 102, 178, 0.15);
     border-color: var(--primary-color);
 }
 
@@ -1097,7 +1097,7 @@ a {
     margin: 0 auto 20px;
     color: white;
     font-size: 24px;
-    box-shadow: 0 4px 15px rgba(217, 70, 239, 0.3);
+    box-shadow: 0 4px 15px rgba(255, 102, 178, 0.3);
 }
 
 .benefit-card h3 {
@@ -1252,7 +1252,7 @@ a {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(196, 162, 135, 0.1);
+    box-shadow: 0 0 0 3px rgba(255, 102, 178, 0.1);
 }
 
 .contact-form button {
@@ -1320,7 +1320,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(217, 70, 239, 0.2);
+    background: rgba(255, 102, 178, 0.2);
     border-radius: 50%;
     color: var(--primary-color);
     font-size: 16px;
@@ -1633,9 +1633,9 @@ a {
 
 @keyframes glow {
     0%, 100% {
-        box-shadow: 0 0 10px rgba(196, 162, 135, 0.2);
+        box-shadow: 0 0 10px rgba(255, 102, 178, 0.2);
     }
     50% {
-        box-shadow: 0 0 20px rgba(196, 162, 135, 0.4);
+        box-shadow: 0 0 20px rgba(255, 102, 178, 0.4);
     }
 }
